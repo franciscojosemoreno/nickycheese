@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F0E8;
+  color: #1A0A0A;
+}
+
+::selection {
+  background-color: #7D1A1A;
+  color: #F5F0E8;
+}
+
+/* Hide scrollbar for category pills */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-label {
+    @apply font-sans text-xs font-bold tracking-[0.3em] uppercase text-burgundy-900 mb-4 block;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl text-burgundy-900 leading-tight;
+  }
+
+  .btn-primary {
+    @apply inline-block bg-burgundy-900 text-cream-200 px-8 py-3 font-sans font-bold tracking-[0.2em] uppercase text-xs hover:bg-burgundy-950 transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-block border-2 border-cream-200 text-cream-200 px-8 py-3 font-sans font-bold tracking-[0.2em] uppercase text-xs hover:bg-cream-200 hover:text-burgundy-900 transition-all duration-200;
+  }
+}
