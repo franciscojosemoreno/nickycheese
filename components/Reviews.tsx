@@ -29,6 +29,11 @@ const reviews = [
     time: 'hace 3 meses',
     text: 'Nicky Cheese es un lindo restaurante de comida típica norteamericana. El lugar es pequeño, por lo que los fines de semana puede haber espera.',
   },
+  {
+    name: 'Ignacio Orellano',
+    time: 'hace 2 meses',
+    text: 'La primera vez que vinimos hubo un tiempo de espera extenso. Aún así la paciencia y la espera valieron la pena al 100%. Nos pedimos el brunch y fue increíble. Los chicos que trabajan ahí son muy amables.',
+  },
 ]
 
 function Stars() {
