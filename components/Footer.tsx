@@ -84,6 +84,17 @@ export default function Footer() {
           <p className="font-sans text-xs text-cream-400">
             © {year} Nicky Cheese. Todos los derechos reservados.
           </p>
+          <p className="font-sans text-xs text-cream-400">
+            Diseño y Desarrollo{' '}
+            <a
+              href="https://jmdigitalconsulting.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-cream-100 transition-colors"
+            >
+              JM DIGITAL CONSULTING
+            </a>
+          </p>
         </div>
 
       </div>
